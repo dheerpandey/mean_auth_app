@@ -19,6 +19,7 @@ export class ProfileComponent implements OnInit
         this.authService.getUserProfile().subscribe(profile =>
         {
             this.user = profile.user;
+            console.log(this.user);
         },
         err =>{
             console.log(err);

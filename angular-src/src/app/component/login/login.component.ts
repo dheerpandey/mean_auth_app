@@ -52,4 +52,9 @@ export class LoginComponent implements OnInit{
             });
         }  
     }
+
+    cancelClicked()
+    {
+        console.log('CancelClicked');
+    }
 }
