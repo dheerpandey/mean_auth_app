@@ -12,8 +12,7 @@ router.post('/register',(req,res,next)=>{
         email : req.body.email,
         username : req.body.username,
         password :  req.body.password
-    });
-
+    });   
     User.addUser(newUser, (err, user)=>{
     if(err)
     {
@@ -42,7 +41,7 @@ if(user)
     if(isMatch)
     {
     const token = jwt.sign(user,config.secret, {
-        expiresIn : 3600
+        expiresIn : 60
     });
 
     res.json({success : true, 

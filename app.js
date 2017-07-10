@@ -38,6 +38,10 @@ require('./config/passport')(passport);
 //Express Routers
 app.use('/users',users);
 
+app.get('/testing_javascript.html',(req, res) =>{
+//res.send(bodyparser.json());
+});
+
 app.get('/',(req, res) =>{
 res.send('Invalid Endpoint!!');
 });

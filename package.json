@@ -7,16 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app"
   },
-  "dependencies":{
-    "express":"*",
-    "mongoose":"*",
-    "bcryptjs":"*",
-    "cors":"*",
-    "jsonwebtoken":"*",
-    "body-parser":"*",
-    "passport":"*",
-    "passport-jwt":"*"
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "cors": "*",
+    "express": "*",
+    "jsonwebtoken": "*",
+    "mongoose": "*",
+    "nodemon": "^1.11.0",
+    "passport": "*",
+    "passport-jwt": "*"
   },
   "author": "Dheerendra Pandey",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }

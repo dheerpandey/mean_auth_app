@@ -1,1 +1,7 @@
-Here is My Profile.
+<div *ngIf="user">
+<h2 class="page-header">{{user.name}}</h2>
+<ul class="list-group">
+    <li class="list-group-item">User Name :: {{user.username}}</li>
+    <li class="list-group-item">Email :: {{user.Email}}</li>
+</ul>
+</div>  
